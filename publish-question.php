@@ -31,7 +31,7 @@
       </div>
       <div class="mb-3">
         <label for="exampleInputEmail1" class="form-label">Prix de vente</label>
-        <input type="text" class="form-control" name="content">
+        <input type="number" class="form-control" name="content">
       </div>
       <div class="mb-3">
         <label for="exampleInputEmail1" class="form-label">Photo</label>
