@@ -33,7 +33,11 @@
     <div class="col">
    <input type="submit" name="validate" value="Connexion">
    <br><br>
-   <a href="signup.php"><p>Je n'ai pas de compte, je m'inscris</p></a>
+   <div>
+       <a href="signup.php">Je n'ai pas de compte, je m'inscris</a>
+</div>
+   <br>
+   <a href="index.php">Retour a l'index</a>
     </div>
     </div>
     </form>

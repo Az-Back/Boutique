@@ -59,7 +59,7 @@ require('actions/users/signupAction.php');
        </div>
        <div class="col">
          <div class="inputBox">
-             <input type="text" name="postal_code" required="required">
+             <input type="number" name="postal_code" required="required">
              <span class="text">Code postal</span>
              <span class="line"></span>
    </div>
@@ -68,7 +68,7 @@ require('actions/users/signupAction.php');
       <input type="submit" name="validate" value="Envoyer">
     </div>
     </div>        
-        <a href="login.php"><p>J'ai deja un compte, je me connecte</p></a>
+        <a href="login.php">J'ai deja un compte, je me connecte</a>
     </form>
 </div>
 

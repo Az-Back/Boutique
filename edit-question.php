@@ -17,7 +17,7 @@ require('actions/questions/editQuestionAction.php');
       <?php 
         if(isset($question_content)){
             ?>
-            <form method="POST">
+            <form method="POST" enctype="multipart/form-data">
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Titre de l'objet'</label>
                 <input type="text" class="form-control" name="title" value="<?= $question_title; ?>">
@@ -28,8 +28,17 @@ require('actions/questions/editQuestionAction.php');
             </div>
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Prix de vente</label>
-                <textarea class="form-control" name="content"><?= $question_content; ?></textarea>
+                <input class="form-control" type="number" name="content" value="<?= $question_content; ?>">
             </div>
+                
+            <div class="mb-3">    
+                <label for="exampleInputEmail1" class="form-label">Photo</label>
+                <input type="file" class="form-control" name="picture">
+            </div>  
+                <div>      
+            <?= '<img src="data:image/png|image/jpeg|image/gif|image/jpg;base64,' . base64_encode( $question_image ) . '" />'; ?>
+                </div>
+            <br><br>
                 <button type="submit" class="btn btn-primary" name="validate">Modifier la question</button>
             </form>
             </div> 

@@ -21,6 +21,7 @@ if(isset($_GET['id']) && !empty($_GET['id'])){
             $question_title = $questionInfos['titre'];
             $question_description = $questionInfos['description'];
             $question_content = $questionInfos['contenu'];
+            $question_image = $questionInfos['bin'];
 
             $question_description = str_replace('<br />', '', $question_description);
             $question_content = str_replace('<br />', '', $question_content);
