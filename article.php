@@ -1,5 +1,4 @@
 <?php 
-session_start();
 require('actions/users/securityAction.php');
 require('actions/questions/showArticleContentAction.php');
 require('actions/questions/postAnswerAction.php');
@@ -24,7 +23,7 @@ require('actions/questions/showAllAnswersOfQuestionAction.php');
 
 
 
-                if(isset($question_publication_date)){
+                if(isset($question_publication_date) && ($_SESSION['auth'])){
                 ?>
                     <section class="show-content">
                         <h3>
